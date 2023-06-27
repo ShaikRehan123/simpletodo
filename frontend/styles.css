@@ -1,0 +1,109 @@
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  font-size: 16px;
+  color: #555;
+  outline: none;
+}
+
+input[type="text"]::placeholder {
+  color: #999;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+li.completed {
+  background-color: #f7f7f7;
+  color: #999;
+  text-decoration: line-through;
+}
+
+li button {
+  padding: 5px 10px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li .delete-button {
+  background-color: #f44336;
+  color: #fff;
+}
+
+li .delete-button:hover {
+  background-color: #d32f2f;
+}
+
+li .done-button {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+li .done-button:hover {
+  background-color: #1976d2;
+}
+
+li .undo-button {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+li .undo-button:hover {
+  background-color: #f57c00;
+}
